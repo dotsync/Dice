@@ -6,15 +6,16 @@ class Clicker extends Component {
     this.state = {
       counter: 0
     }
-    this.handleClick = this.handleClick.bind(this);
+    this.randomNum = this.randomNum.bind(this);
   }
-  handleClick = (e) => {
-    console.log('clicked!')
+  randomNum = (e) => {
+    const rand = Math.floor(Math.random() * 100)
+    this.setState({counter: rand})
   }
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>click me</button>
+        <button onClick={this.randomNum}>click me</button>
         <h1>{this.state.counter}</h1>
       </div>
     )
