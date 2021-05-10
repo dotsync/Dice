@@ -11,6 +11,7 @@
 }
 
 .RollDice button {
+  font-size: 20px;
   align-self: center;
   width: 15em;
   padding: 1.5em;
@@ -22,6 +23,6 @@
 }
 
 .RollDice button:hover {
-  background-color: darkslateblue;
+  background-color:deepskyblue;
   cursor: pointer;
 }
