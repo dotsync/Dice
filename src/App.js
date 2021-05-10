@@ -1,12 +1,12 @@
-import './App.css';
-import Clicker from './Clicker'
 import React, {Component} from 'react'
+import './App.css';
+import Die from './components/Die'
 
 class App extends Component{
   render() {
     return (
       <div className="App">
-        <Clicker />
+        <Die />
       </div>
     )
   };
